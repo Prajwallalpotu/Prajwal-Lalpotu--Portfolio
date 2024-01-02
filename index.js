@@ -18,6 +18,14 @@ menu_item.forEach((menu_item)=>{
     })
 })
 
+document.addEventListener('click', (event) => {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnBar = bar.contains(event.target);
+
+    if (!isClickInsideNav && !isClickOnBar) {
+        nav.classList.remove('active');
+    }
+});
 // change background header
 function scrollHeader(){
     const header = document.getElementById('.header');
