@@ -96,4 +96,22 @@ function resumeActive(){
         }
     })
 }
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "prajwal.lalpotu2@gmail.com",
+        Password : "EA7326031C7F54B74A9679504822AA45659F",
+        To : 'prajwal.lalpotu2@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact from Porfolio",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+
+
+
+
 window.addEventListener('scroll' , resumeActive);

@@ -531,7 +531,9 @@ header.active {
     flex-direction: column;
     padding: 0 50px;
 }
-
+.contact_content form ion-icon{
+    margin-left: 5px;
+}
 .inputs {
     display: flex;
     justify-content: space-between;
